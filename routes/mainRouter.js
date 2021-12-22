@@ -4,7 +4,8 @@ let mainRouter = express.Router();
 
 mainRouter.get('/',  (req, res) => {
 
-	res.sendFile(path.join(__dirname,'../puplic/templates','welcome.html')); //\puplic\templates
+	res.render(path.join(__dirname,'../public/templates/','welcome.html'));
 });
+
 
 module.exports = mainRouter ;
